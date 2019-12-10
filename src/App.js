@@ -110,7 +110,7 @@ export default class App extends React.Component {
             src={this.isRolling() ? "/img/stop.png" : "/img/start.png"}
             alt=""
             onClick={this.onClick.bind(this)}
-            height="100"
+            height={this.isRolling() ? "100" : "120"}
           />
         </div>
       </div>
