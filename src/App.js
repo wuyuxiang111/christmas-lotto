@@ -30,7 +30,7 @@ export default class App extends React.Component {
       }
 
       for (var j = 0; j < 6; j++) {
-        if (j !== i && i !== j + 1 - 2 * (j % 2) && result.indexOf(j) === -1) {
+        if (Math.floor(i/2) !== Math.floor(j/2) && result.indexOf(j) === -1) {
           result.push(j);
           generate(i + 1, result);
           result.pop(j);
